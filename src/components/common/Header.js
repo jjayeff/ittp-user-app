@@ -5,12 +5,14 @@ import {
   Image,
   StyleSheet,
 } from 'react-native';
+import { ITTP } from '../../texts';
 
 const Header = (props) => {
   const { headerText } = props;
-  if (headerText === 'ITTP') {
+  const { headerStyle, textStyle } = styles;
+  if (headerText === ITTP) {
     return (
-      <View style={styles.header}>
+      <View style={headerStyle}>
         <View style={{ width: 20, height: 20 }} />             
         <Image
           style={{ width: 90, height: 30 }}
@@ -24,9 +26,9 @@ const Header = (props) => {
     );
   }
    return (
-    <View style={styles.header}>
+    <View style={headerStyle}>
       <View style={{ width: 20, height: 20 }} />     
-      <Text> {props.headerText} </Text>      
+      <Text style={textStyle}> {props.headerText} </Text>      
       <Image
         style={{ width: 20, height: 20 }}
         source={require('../../../store/image/icons/logout-icon.png')}        
@@ -36,7 +38,7 @@ const Header = (props) => {
 };
 
 const styles = StyleSheet.create({
-  header: {
+  headerStyle: {
     justifyContent: 'space-between',            
     alignItems: 'center',    
     height: 60,
@@ -48,6 +50,9 @@ const styles = StyleSheet.create({
     shadowOpacity: 0.2,
     flexDirection: 'row',
   },
+  textStyle: {
+    color: '#153d8a'
+  }
 });
 
 

@@ -1,14 +1,15 @@
 import React from 'react';
 import { Text, View, StyleSheet } from 'react-native';
 
-const LoanSummary = () => {
+const LoanSummary = (props) => {
   const { loanSummaryContainerStyle, detailTypeLoanStyle, textStyle, textColorStyle } = styles;
+  const { firstname, lastname, loan_id, product_name } = props.loan;
   return (
     <View style={loanSummaryContainerStyle}>
-      <Text style={textStyle}> นายเอกกวิชญ์  เลิศไกร </Text>
+      <Text style={textStyle}>{firstname} {lastname}</Text>
       <View style={detailTypeLoanStyle}>
-        <Text style={textStyle}> 60-01-03-0800 </Text>
-        <Text style={textColorStyle}> Personal Loan Installment </Text>          
+        <Text style={textStyle}>{loan_id}</Text>
+        <Text style={textColorStyle}>{product_name}</Text>          
       </View>
     </View>
   );

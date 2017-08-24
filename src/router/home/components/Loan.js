@@ -1,21 +1,31 @@
-import React from 'react';
+import React, { Component } from 'react';
 import { View, StyleSheet, ScrollView } from 'react-native';
+import Swiper from 'react-native-swiper';
 import LoanSummary from './LoanSummary';
 import LoanDetail from './LoanDetail';
 import LoanButton from './LoanButton';
 
-const Loan = () => {
-  const { loanStyle } = styles;
-  return (
-    <ScrollView>
-      <View style={loanStyle}>
-        <LoanSummary />      
-        <LoanDetail />
-        <LoanButton />
-      </View>
-    </ScrollView>
-  );
-};
+class Loan extends Component {
+  renderDetail() {
+    const { loanStyle } = styles;   
+    return this.props.loans.map(loan => 
+      <ScrollView key={loan.loan_id}>
+        <View style={loanStyle}>
+          <LoanSummary loan={loan} />      
+          <LoanDetail loan={loan} />
+          <LoanButton loan={loan} />
+        </View>
+      </ScrollView>
+    );
+  }
+  render() {
+    return (
+      <Swiper showsButtons loop={false} >
+        {this.renderDetail()}
+      </Swiper>
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   loanStyle: {         
@@ -24,6 +34,11 @@ const styles = StyleSheet.create({
     justifyContent: 'space-between', 
     paddingTop: 30,    
   },
+  text: {
+    color: '#fff',
+    fontSize: 30,
+    fontWeight: 'bold',
+  }
 });
 
 export default Loan;

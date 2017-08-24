@@ -5,3 +5,6 @@ export * from './Header';
 export * from './Input';
 export * from './Spinner';
 export * from './Bottom';
+export * from './Modal';
+export * from './TextModal';
+export * from './Date';

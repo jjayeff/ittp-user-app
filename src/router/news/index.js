@@ -1,12 +1,15 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Header, Bottom } from '../../components/common';
+import Loan from '../home/container/Loan';
+import { NEWS } from '../../texts';
 
 const News = () => {
   const { homeStyle } = styles;
   return (
     <View style={homeStyle}>
-      <Header headerText='ข่าวสาร' />
+      <Header headerText={NEWS} />
+      <Loan />
       <Bottom />      
     </View>
   );
