@@ -8,3 +8,4 @@ export * from './Bottom';
 export * from './Modal';
 export * from './TextModal';
 export * from './Date';
+export * from './Logout';

@@ -4,7 +4,9 @@ import {
   View,
   Image,
   StyleSheet,
+  TouchableOpacity,
 } from 'react-native';
+import { Logout } from '../../components/common';
 import { ITTP } from '../../texts';
 
 const Header = (props) => {
@@ -18,21 +20,15 @@ const Header = (props) => {
           style={{ width: 90, height: 30 }}
           source={require('../../../store/image/ITTP.jpg')}      
         />
-        <Image
-          style={{ width: 20, height: 20 }}
-          source={require('../../../store/image/icons/logout-icon.png')}
-        />
+        <Logout />
       </View>
     );
   }
    return (
     <View style={headerStyle}>
       <View style={{ width: 20, height: 20 }} />     
-      <Text style={textStyle}> {props.headerText} </Text>      
-      <Image
-        style={{ width: 20, height: 20 }}
-        source={require('../../../store/image/icons/logout-icon.png')}        
-      />
+      <Text style={textStyle}> {props.headerText} </Text>   
+      <Logout />
     </View>
   ); 
 };

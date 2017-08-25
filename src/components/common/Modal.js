@@ -17,7 +17,7 @@ class ModalComponent extends Component {
       <TouchableOpacity onPress={onPress}>
         <Image
           style={closeStyle}
-          source={require('../../../store/image/icon/close-icon.png')}        
+          source={require('../../../store/image/icons/close-icon.png')}        
         />
       </TouchableOpacity>
     </View>
