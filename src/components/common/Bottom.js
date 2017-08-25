@@ -17,7 +17,7 @@ class Bottom extends Component {
     // Actions.news();
   }
   onPressHistory() {
-    // Actions.history();
+    Actions.history();
   }
   onPressBarcode() {
     // Actions.barcode();

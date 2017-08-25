@@ -1,6 +1,8 @@
 import { combineReducers } from 'redux';
-import LoanReducer from './LoanReducer';
+import LoanReducer from './Loan';
+import TransactionReducer from './Transaction';
 
 export default combineReducers({
   loans: LoanReducer,
+  transactions: TransactionReducer,
 });

@@ -19,8 +19,8 @@ const styles = {
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.1,
     shadowRadius: 2,
-    marginLeft: 5,
-    marginRight: 5,
+    marginLeft: 30,
+    marginRight: 30,
     marginTop: 5,
   }
 };

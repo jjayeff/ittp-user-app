@@ -34,3 +34,16 @@ export const ME = 'ฉัน';
 
 //etc
 export const BATH = 'บาท';
+
+//trc
+export const CTBBL = 'CTBBL';
+export const CTGSB = 'CTGSB';
+export const BCBBL = 'BCBBL';
+export const BCGSB = 'BCGSB';
+export const CD = 'CD';
+export const FIRST_TRANSACTION = 'FD';
+
+//bank
+export const BBL_NAME = 'บัญชีธนาคาร ธนาคารกรุงเทพ';
+export const GSB_NAME = 'บัญชีธนาคาร ธนาคารออมสิน';
+export const ITTP_NAME = 'บริษัท ไอทีทีพี สาขาใหญ่';

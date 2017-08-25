@@ -32,6 +32,7 @@ const styles = StyleSheet.create({
   },
   textStyle: {
     fontSize: 14,
+    color: '#153d8a'
   },
   textColorStyle: {
     fontSize: 12,
