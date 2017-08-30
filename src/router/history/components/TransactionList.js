@@ -24,11 +24,9 @@ class Transaction extends Component {
   }
   render() {
     return (
-      <Swiper showsButtons loop={false} >
-        <ScrollView>
+      <View showsButtons loop={false} >
           {this.renderDetail()}
-        </ScrollView>
-      </Swiper>
+      </View>
     );
   }
 }

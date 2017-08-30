@@ -8,12 +8,14 @@ class Transaction extends Component {
   renderDetail() {
     const { loanStyle } = styles;   
     return this.props.loans.map(loan => 
-      <ScrollView key={loan.loan_id}>
-        <View style={loanStyle}>
-          <TransactionSummary loan={loan} /> 
-          <TransactionList transactions={this.props.transactions} loan={loan} />     
+        <View style={loanStyle} key={loan.loan_id}>
+          <View style={{ height: 80 }}>
+            <TransactionSummary loan={loan} /> 
+          </View>
+          <ScrollView>
+            <TransactionList transactions={this.props.transactions} loan={loan} />  
+          </ScrollView>
         </View>
-      </ScrollView>
     );
   }
   render() {
@@ -29,8 +31,8 @@ const styles = StyleSheet.create({
   loanStyle: {         
     flex: 1,
     flexDirection: 'column',   
-    justifyContent: 'space-between', 
-    paddingTop: 30,    
+    paddingTop: 5,   
+    paddingBottom: 40, 
   },
   text: {
     color: '#fff',

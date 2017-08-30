@@ -2,7 +2,8 @@ import React, { Component } from 'react';
 import {
   View,
   Text,
-  Image
+  Image,
+  ScrollView
 } from 'react-native';
 import { TextModal } from '../../../components/common';
 import { DateFormat, Money } from '../../../utils/base';
@@ -100,31 +101,33 @@ class ModalTransactionDetail extends Component {
       trc
     } = this.props.transaction;
     return (
-    <View style={containerStyle}>
-      <View style={{ paddingTop: 50 }}>
-        <TextModal>
-          {this.renderBankComponent(trc)}
-        </TextModal>
-        <TextModal>
-          <View style={rowStyle}>
-            <Text style={textStyle}>จำนวนเงิน</Text>
-            <Text style={textStyle}>วิธีการชำระ</Text>
-          </View>
-          <View style={rowStyle}>
-            <Text style={HeadertextStyle}>{Money(cash_in)}</Text>
-            <Text style={HeadertextStyle}>โอนผ่านบัญชีธนาคาร</Text>
-          </View>
-        </TextModal>
-        <TextModal>
-          <View style={rowStyle}>
-            <Text style={textStyle}>วันเวลาที่ทำรายการ</Text>
-          </View>
-          <View style={rowStyle}>
-            <Text style={HeadertextStyle}>{DateFormat(trans_date)}</Text>
-          </View>
-        </TextModal>
+    <ScrollView>
+      <View style={containerStyle}>
+        <View style={{ paddingTop: 50 }}>
+          <TextModal>
+            {this.renderBankComponent(trc)}
+          </TextModal>
+          <TextModal>
+            <View style={rowStyle}>
+              <Text style={textStyle}>จำนวนเงิน</Text>
+              <Text style={textStyle}>วิธีการชำระ</Text>
+            </View>
+            <View style={rowStyle}>
+              <Text style={HeadertextStyle}>{Money(cash_in)}</Text>
+              <Text style={HeadertextStyle}>โอนผ่านบัญชีธนาคาร</Text>
+            </View>
+          </TextModal>
+          <TextModal>
+            <View style={rowStyle}>
+              <Text style={textStyle}>วันเวลาที่ทำรายการ</Text>
+            </View>
+            <View style={rowStyle}>
+              <Text style={HeadertextStyle}>{DateFormat(trans_date)}</Text>
+            </View>
+          </TextModal>
+        </View>
       </View>
-    </View>
+    </ScrollView>
     );
   }
 }

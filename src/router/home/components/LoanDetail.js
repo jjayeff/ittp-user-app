@@ -24,7 +24,7 @@ class LoanDetail extends Component {
     return (
         <View style={loanDetailContainerStyle}>
           <Image
-          source={require('../../../../store/image/test1.png')}
+          source={require('../../../../store/image/circle.png')}
           style={circleStyle}
           >
             <TouchableWithoutFeedback onPress={this.showModal}>
@@ -62,7 +62,7 @@ const styles = StyleSheet.create({
   loanDetailContainerStyle: {       
     flex: 1,
     flexDirection: 'row',           
-    paddingTop: 40,
+    paddingTop: 15,
     paddingRight: 15,
     paddingLeft: 15,       
   },

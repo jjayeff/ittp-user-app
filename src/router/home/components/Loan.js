@@ -31,8 +31,7 @@ const styles = StyleSheet.create({
   loanStyle: {         
     flex: 1,
     flexDirection: 'column',   
-    justifyContent: 'space-between', 
-    paddingTop: 30,    
+    justifyContent: 'space-between',   
   },
   text: {
     color: '#fff',

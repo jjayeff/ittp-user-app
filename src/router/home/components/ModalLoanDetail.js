@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import {
   View,
   Text,
+  ScrollView,
 } from 'react-native';
 import { TextModal } from '../../../components/common';
 import { DateFormat, Money } from '../../../utils/base';
@@ -37,79 +38,81 @@ class ModalLoanDetail extends Component {
       trans_date 
     } = this.props.loan;        
     return (
-    <View style={containerStyle}>
-      <TextModal>
-        <Text style={HeadertextStyle}>{SUMMARY_STATEMENT}</Text>
-      </TextModal>
-      <TextModal>
-        <View style={rowStyle}>
-          <View >
-            <Text style={textStyle}>{MIN_DUE}</Text>
-            <Text style={HeadertextStyle} >{Money(min_due)} {BATH}</Text>         
-          </View>
-          <View>
-            <Text style={textStyle}>{DUE_DATE}</Text> 
-            <Text style={HeadertextStyle} >{DateFormat(due_date)}</Text>        
-          </View>
-        </View>
-      </TextModal>
-      <TextModal>
-        <View style={rowStyle}>
-          <View >
-            <Text style={textStyle}>{CREDIT_LIMIT}</Text>
-            <Text style={HeadertextStyle} >{Money(credit_limit)} {BATH}</Text>         
-          </View>
-          <View>
-            <Text style={textStyle}>{BF_PRINCIPAL}</Text> 
-            <Text style={HeadertextStyle} >{Money(bf_principal)} {BATH}</Text>        
-          </View>
-          <View>
-            <Text style={textStyle}>{CF_PRINCIPAL}</Text> 
-            <Text style={HeadertextStyle} >{Money(cf_principal)} {BATH}</Text>        
-          </View>
-        </View>
-      </TextModal>
-      <TextModal>
-        <View style={rowStyle}>
-          <View>
-            <Text style={textStyle}>{PAY}</Text>
-            <Text style={HeadertextStyle} >{FINE}</Text>
-            <Text style={HeadertextStyle} >{INTERREST_LAST}</Text>
-            <Text style={HeadertextStyle} >{TOTAL_AMOUNT}</Text>
-            <Text style={HeadertextStyle} >{TOTAL}</Text>            
-          </View>
-          <View style={{ alignItems: 'flex-end' }}>
-            <Text style={textStyle}>{DATE_TANSACTION} {DateFormat(trans_date)}</Text> 
-            <View style={{ paddingRight: 40 }}>
-              <Text style={HeadertextStyle} >0.00</Text>        
-              <Text style={HeadertextStyle} >0.00</Text>        
-              <Text style={HeadertextStyle} >0.00</Text>        
-              <Text style={HeadertextStyle} >0.00</Text>        
+    <ScrollView>
+      <View style={containerStyle}>
+        <TextModal>
+          <Text style={HeadertextStyle}>{SUMMARY_STATEMENT}</Text>
+        </TextModal>
+        <TextModal>
+          <View style={rowStyle}>
+            <View >
+              <Text style={textStyle}>{MIN_DUE}</Text>
+              <Text style={HeadertextStyle} >{Money(min_due)} {BATH}</Text>         
+            </View>
+            <View>
+              <Text style={textStyle}>{DUE_DATE}</Text> 
+              <Text style={HeadertextStyle} >{DateFormat(due_date)}</Text>        
             </View>
           </View>
-        </View>
-      </TextModal>
-      <TextModal>
-        <View style={rowStyle}>
-          <View>
-            <Text style={textStyle}>{SAMMARY}</Text>
-            <Text style={HeadertextStyle} >{BAD_PAY}</Text>
-            <Text style={HeadertextStyle} >{MIN_DUE_LAST}</Text>
-            <Text style={HeadertextStyle} >{FINE_LAST}</Text>
-            <Text style={HeadertextStyle} >{TOTAL}</Text>            
-          </View>
-          <View style={{ alignItems: 'flex-end' }}>
-            <Text style={textStyle}>{DATE_TANSACTION} {DateFormat(trans_date)}</Text> 
-            <View style={{ paddingRight: 40 }}>
-              <Text style={HeadertextStyle} >0.00</Text>        
-              <Text style={HeadertextStyle} >0.00</Text>        
-              <Text style={HeadertextStyle} >0.00</Text>        
-              <Text style={HeadertextStyle} >0.00</Text>        
+        </TextModal>
+        <TextModal>
+          <View style={rowStyle}>
+            <View >
+              <Text style={textStyle}>{CREDIT_LIMIT}</Text>
+              <Text style={HeadertextStyle} >{Money(credit_limit)} {BATH}</Text>         
+            </View>
+            <View>
+              <Text style={textStyle}>{BF_PRINCIPAL}</Text> 
+              <Text style={HeadertextStyle} >{Money(bf_principal)} {BATH}</Text>        
+            </View>
+            <View>
+              <Text style={textStyle}>{CF_PRINCIPAL}</Text> 
+              <Text style={HeadertextStyle} >{Money(cf_principal)} {BATH}</Text>        
             </View>
           </View>
-        </View>
-      </TextModal>
-    </View>
+        </TextModal>
+        <TextModal>
+          <View style={rowStyle}>
+            <View>
+              <Text style={textStyle}>{PAY}</Text>
+              <Text style={HeadertextStyle} >{FINE}</Text>
+              <Text style={HeadertextStyle} >{INTERREST_LAST}</Text>
+              <Text style={HeadertextStyle} >{TOTAL_AMOUNT}</Text>
+              <Text style={HeadertextStyle} >{TOTAL}</Text>            
+            </View>
+            <View style={{ alignItems: 'flex-end' }}>
+              <Text style={textStyle}>{DATE_TANSACTION} {DateFormat(trans_date)}</Text> 
+              <View style={{ paddingRight: 40 }}>
+                <Text style={HeadertextStyle} >0.00</Text>        
+                <Text style={HeadertextStyle} >0.00</Text>        
+                <Text style={HeadertextStyle} >0.00</Text>        
+                <Text style={HeadertextStyle} >0.00</Text>        
+              </View>
+            </View>
+          </View>
+        </TextModal>
+        <TextModal>
+          <View style={rowStyle}>
+            <View>
+              <Text style={textStyle}>{SAMMARY}</Text>
+              <Text style={HeadertextStyle} >{BAD_PAY}</Text>
+              <Text style={HeadertextStyle} >{MIN_DUE_LAST}</Text>
+              <Text style={HeadertextStyle} >{FINE_LAST}</Text>
+              <Text style={HeadertextStyle} >{TOTAL}</Text>            
+            </View>
+            <View style={{ alignItems: 'flex-end' }}>
+              <Text style={textStyle}>{DATE_TANSACTION} {DateFormat(trans_date)}</Text> 
+              <View style={{ paddingRight: 40 }}>
+                <Text style={HeadertextStyle} >0.00</Text>        
+                <Text style={HeadertextStyle} >0.00</Text>        
+                <Text style={HeadertextStyle} >0.00</Text>        
+                <Text style={HeadertextStyle} >0.00</Text>        
+              </View>
+            </View>
+          </View>
+        </TextModal>
+      </View>
+    </ScrollView>
     );
   }
 }

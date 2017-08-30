@@ -17,7 +17,7 @@ const Header = (props) => {
       <View style={headerStyle}>
         <View style={{ width: 20, height: 20 }} />             
         <Image
-          style={{ width: 90, height: 30 }}
+          style={{ width: 90, height: 30, }}
           source={require('../../../store/image/ITTP.jpg')}      
         />
         <Logout />

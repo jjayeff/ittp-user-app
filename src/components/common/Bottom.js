@@ -23,7 +23,7 @@ class Bottom extends Component {
     // Actions.barcode();
   }
   onPressMe() {
-    // Actions.me();
+    Actions.me();
   }
   render() {
     const { iconStyle, bottomStyle, textStyle, selectTextStyle } = styles;
