@@ -1,15 +1,14 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Header, Bottom } from '../../components/common';
-import Loan from './container/Loan';
 import { ITTP } from '../../texts';
+import HomeComponent from './containers/Home';
 
 const Home = () => {
   const { homeStyle } = styles;
   return (
     <View style={homeStyle}>
-      <Header headerText={ITTP} />
-      <Loan />
+      <HomeComponent />
       <Bottom />      
     </View>
   );
@@ -20,6 +19,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#FFFFFF',          
     flex: 1,
     flexDirection: 'column',
+    justifyContent: 'space-between',    
   },
 });
 

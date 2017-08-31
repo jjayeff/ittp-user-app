@@ -11,10 +11,12 @@ class MeSummary extends Component {
     );
   }
   render() {
-    const { containerStyle } = styles;
+    const { containerStyle, textStyle, textsmallStyle } = styles;
     return (
       <View style={containerStyle}>
         {this.renderImage()}
+        <Text style={textStyle}> คุณ เอกกวิชญ์ เลิศไกร</Text>
+        <Text style={textsmallStyle}> x-xxxx-xxx68-86-4</Text>
       </View>
     );
   }
@@ -24,8 +26,7 @@ const styles = StyleSheet.create({
   containerStyle: {       
     flex: 1,
     flexDirection: 'column',
-    alignItems: 'center',    
-    justifyContent: 'space-between',            
+    alignItems: 'center',           
     paddingTop: 30,
     paddingRight: 30,
     paddingLeft: 30,  
@@ -43,10 +44,12 @@ const styles = StyleSheet.create({
   },
   textStyle: {
     fontSize: 14,
+    paddingTop: 5,
     color: '#153d8a'
   },
   textsmallStyle: {
     fontSize: 12,
+    paddingTop: 5,
     color: '#153d8a'
   },
   textColorStyle: {

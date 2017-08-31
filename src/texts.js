@@ -1,12 +1,12 @@
 // HomePage
 export const CAL_CLOSE_CONTRACT = 'คำนวนค่าปิดสัญญา';
 export const STATEMENT = 'Statement';
-export const MIN_DUE = 'ยอดขั้นต่ำที่ต้องชำระดือนนี้';
+export const MIN_DUE = 'ยอดขั้นต่ำที่ต้องชำระเดือนนี้';
 export const DUE_DATE = 'กรุณาชำระภายในวันที่';
 export const SUMMARY_STATEMENT = 'สรุปรายการบัญชีสินเชื่อ';
 export const CREDIT_LIMIT = 'วงเงินสินเชื่อ';
 export const BF_PRINCIPAL = 'ต้นคงค้าง';
-export const CF_PRINCIPAL = 'ยอดเงินรวมี่ค้างชำระ';
+export const CF_PRINCIPAL = 'ยอดเงินรวมที่ค้างชำระ';
 export const PAY = 'ชำระเงิน';
 export const DATE_TANSACTION = 'วันที่ทำรายการ';
 export const FINE = 'ค่าติดตามทวงถาม';
@@ -27,7 +27,7 @@ export const DATE_CLOSE_CONTRACT = 'วันที่ต้องการป�
 //Icon
 export const HOME = 'หน้าแรก';
 export const ITTP = 'ITTP';
-export const NEWS = 'ข่าวสาร';
+export const LOAN = 'สัญญา';
 export const HISTORY = 'รายการ';
 export const BARCODE = 'บาร์โค้ด';
 export const ME = 'ฉัน';

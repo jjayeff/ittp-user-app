@@ -4,7 +4,6 @@ import {
   View,
   Image,
   StyleSheet,
-  TouchableOpacity,
 } from 'react-native';
 import { Logout } from '../../components/common';
 import { ITTP } from '../../texts';

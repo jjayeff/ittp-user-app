@@ -7,14 +7,14 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import { Actions } from 'react-native-router-flux';
-import { HOME, ME, NEWS, HISTORY, BARCODE } from '../../texts';
+import { HOME, ME, LOAN, HISTORY, BARCODE } from '../../texts';
 
 class Bottom extends Component {
   onPressHome() {
     Actions.home();
   }
-  onPressNews() {
-    // Actions.news();
+  onPressLoan() {
+    Actions.loans();
   }
   onPressHistory() {
     Actions.history();
@@ -38,13 +38,13 @@ class Bottom extends Component {
             <Text style={textStyle}>{HOME}</Text>
           </View>
         </TouchableOpacity>
-        <TouchableOpacity onPress={this.onPressNews}>        
+        <TouchableOpacity onPress={this.onPressLoan}>        
           <View style={iconStyle}>      
             <Image
               style={{ width: 20, height: 20 }}
-              source={require('../../../store/image/icons/news-icon.png')}
+              source={require('../../../store/image/icon/loan-icon.png')}
             />
-            <Text style={textStyle}>{NEWS}</Text>        
+            <Text style={textStyle}>{LOAN}</Text>        
           </View>
         </TouchableOpacity>  
         <TouchableOpacity onPress={this.onPressHistory}>                       
@@ -97,14 +97,10 @@ const styles = StyleSheet.create({
     flexDirection: 'column',
   },
   textStyle: {        
-    fontSize: 10,               
+    fontSize: 14,    
+    fontFamily: 'Cloud-Light',   
     alignItems: 'center',   
     color: 'steelblue',
-  },
-  selectTextStyle: {        
-    fontSize: 14,               
-    alignItems: 'center',   
-    color: 'steelblue',    
   },
 });
 

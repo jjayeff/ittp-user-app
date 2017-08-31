@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, ScrollView } from 'react-native';
+import { View, StyleSheet, ScrollView, Text } from 'react-native';
 import Swiper from 'react-native-swiper';
 import TransactionSummary from './TransactionSummary';
 import TransactionList from './TransactionList';
@@ -10,7 +10,7 @@ class Transaction extends Component {
     return this.props.loans.map(loan => 
         <View style={loanStyle} key={loan.loan_id}>
           <View style={{ height: 80 }}>
-            <TransactionSummary loan={loan} /> 
+            <TransactionSummary loan={loan} />        
           </View>
           <ScrollView>
             <TransactionList transactions={this.props.transactions} loan={loan} />  
@@ -35,9 +35,7 @@ const styles = StyleSheet.create({
     paddingBottom: 40, 
   },
   text: {
-    color: '#fff',
     fontSize: 30,
-    fontWeight: 'bold',
   }
 });
 

@@ -21,6 +21,7 @@ const styles = {
     alignSelf: 'center',
     color: 'steelblue',
     fontSize: 16,
+    fontFamily: 'Cloud-Light',
     fontWeight: '600',
     paddingTop: 10,
     paddingBottom: 10,
@@ -34,7 +35,7 @@ const styles = {
     borderColor: '#153d8a',
     marginLeft: 5,
     marginRight: 5,
-  }
+  },
 };
 
 export { Button };

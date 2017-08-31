@@ -22,6 +22,7 @@
 		13B07FC11A68108700A75B9A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
 		140ED2AC1D01E1AD002B40FF /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
 		146834051AC3E58100842450 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 146834041AC3E56700842450 /* libReact.a */; };
+		293ED0AD9927456B9414A245 /* Cloud-Bold.otf in Resources */ = {isa = PBXBuildFile; fileRef = E3488EB25D6F421182056606 /* Cloud-Bold.otf */; };
 		2D02E4BC1E0B4A80006451C7 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB01A68108700A75B9A /* AppDelegate.m */; };
 		2D02E4BD1E0B4A84006451C7 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 13B07FB51A68108700A75B9A /* Images.xcassets */; };
 		2D02E4BF1E0B4AB3006451C7 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 13B07FB71A68108700A75B9A /* main.m */; };
@@ -35,7 +36,11 @@
 		2D02E4C91E0B4AEC006451C7 /* libReact.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 3DAD3EA31DF850E9000B6D8A /* libReact.a */; };
 		2DCD954D1E0B4F2C00145EB5 /* ittp_user_appTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 00E356F21AD99517003FC87E /* ittp_user_appTests.m */; };
 		5E9157361DD0AC6A00FF2AA8 /* libRCTAnimation.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5E9157331DD0AC6500FF2AA8 /* libRCTAnimation.a */; };
+		5FE6F2AA7D3843D7A5E588A6 /* BoonJot-Italic.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CA55A547A55A4D0A8421A6D0 /* BoonJot-Italic.ttf */; };
 		832341BD1AAA6AB300B99B32 /* libRCTText.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 832341B51AAA6A8300B99B32 /* libRCTText.a */; };
+		845EDFF81F57C41B0093D488 /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 845EDFF71F57C41B0093D488 /* fonts */; };
+		855D4A2133604044ABFEA54D /* BoonJot-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9F812E9B1D31436984389D15 /* BoonJot-Regular.ttf */; };
+		DC0361D3AFFF45EE854A8095 /* Cloud-Light.otf in Resources */ = {isa = PBXBuildFile; fileRef = C212F5035B934BE7A4C23592 /* Cloud-Light.otf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -283,6 +288,11 @@
 		5E91572D1DD0AC6500FF2AA8 /* RCTAnimation.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTAnimation.xcodeproj; path = "../node_modules/react-native/Libraries/NativeAnimation/RCTAnimation.xcodeproj"; sourceTree = "<group>"; };
 		78C398B01ACF4ADC00677621 /* RCTLinking.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTLinking.xcodeproj; path = "../node_modules/react-native/Libraries/LinkingIOS/RCTLinking.xcodeproj"; sourceTree = "<group>"; };
 		832341B01AAA6A8300B99B32 /* RCTText.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = RCTText.xcodeproj; path = "../node_modules/react-native/Libraries/Text/RCTText.xcodeproj"; sourceTree = "<group>"; };
+		845EDFF71F57C41B0093D488 /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; name = fonts; path = ../assets/fonts; sourceTree = "<group>"; };
+		9F812E9B1D31436984389D15 /* BoonJot-Regular.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BoonJot-Regular.ttf"; path = "../assets/fonts/BoonJot-Regular.ttf"; sourceTree = "<group>"; };
+		C212F5035B934BE7A4C23592 /* Cloud-Light.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cloud-Light.otf"; path = "../assets/fonts/Cloud-Light.otf"; sourceTree = "<group>"; };
+		CA55A547A55A4D0A8421A6D0 /* BoonJot-Italic.ttf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "BoonJot-Italic.ttf"; path = "../assets/fonts/BoonJot-Italic.ttf"; sourceTree = "<group>"; };
+		E3488EB25D6F421182056606 /* Cloud-Bold.otf */ = {isa = PBXFileReference; explicitFileType = undefined; fileEncoding = 9; includeInIndex = 0; lastKnownFileType = unknown; name = "Cloud-Bold.otf"; path = "../assets/fonts/Cloud-Bold.otf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -495,10 +505,12 @@
 		83CBB9F61A601CBA00E9B192 = {
 			isa = PBXGroup;
 			children = (
+				845EDFF71F57C41B0093D488 /* fonts */,
 				13B07FAE1A68108700A75B9A /* ittp_user_app */,
 				832341AE1AAA6A7D00B99B32 /* Libraries */,
 				00E356EF1AD99517003FC87E /* ittp_user_appTests */,
 				83CBBA001A601CBA00E9B192 /* Products */,
+				CBEDE6C517BB4B94B0F75CB6 /* Resources */,
 			);
 			indentWidth = 2;
 			sourceTree = "<group>";
@@ -513,6 +525,17 @@
 				2D02E4901E0B4A5D006451C7 /* ittp_user_app-tvOSTests.xctest */,
 			);
 			name = Products;
+			sourceTree = "<group>";
+		};
+		CBEDE6C517BB4B94B0F75CB6 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				E3488EB25D6F421182056606 /* Cloud-Bold.otf */,
+				C212F5035B934BE7A4C23592 /* Cloud-Light.otf */,
+				CA55A547A55A4D0A8421A6D0 /* BoonJot-Italic.ttf */,
+				9F812E9B1D31436984389D15 /* BoonJot-Regular.ttf */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -596,7 +619,7 @@
 		83CBB9F71A601CBA00E9B192 /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0610;
+				LastUpgradeCheck = 610;
 				ORGANIZATIONNAME = Facebook;
 				TargetAttributes = {
 					00E356ED1AD99517003FC87E = {
@@ -901,6 +924,11 @@
 			files = (
 				13B07FBF1A68108700A75B9A /* Images.xcassets in Resources */,
 				13B07FBD1A68108700A75B9A /* LaunchScreen.xib in Resources */,
+				293ED0AD9927456B9414A245 /* Cloud-Bold.otf in Resources */,
+				845EDFF81F57C41B0093D488 /* fonts in Resources */,
+				DC0361D3AFFF45EE854A8095 /* Cloud-Light.otf in Resources */,
+				5FE6F2AA7D3843D7A5E588A6 /* BoonJot-Italic.ttf in Resources */,
+				855D4A2133604044ABFEA54D /* BoonJot-Regular.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

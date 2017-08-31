@@ -8,11 +8,11 @@ import LoanButton from './LoanButton';
 class Loan extends Component {
   renderDetail() {
     const { loanStyle } = styles;   
-    return this.props.loans.map(loan => 
+    return this.props.loans.map((loan, index) => 
       <ScrollView key={loan.loan_id}>
         <View style={loanStyle}>
           <LoanSummary loan={loan} />      
-          <LoanDetail loan={loan} />
+          <LoanDetail loan={loan} num={this.props.loans.length} index={index} />
           <LoanButton loan={loan} />
         </View>
       </ScrollView>

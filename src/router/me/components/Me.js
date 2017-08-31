@@ -1,27 +1,20 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, ScrollView, Text } from 'react-native';
-import Swiper from 'react-native-swiper';
+import { View, StyleSheet, ScrollView } from 'react-native';
 import MeSummary from './MeSummary.js';
+import MeList from './MeList';
 
 class Me extends Component {
-  renderDetail() {
-    const { meStyle } = styles;   
-    return this.props.loans.map(loan => 
-        <View style={meStyle} key={loan.loan_id}>
-          <View style={{ height: 150 }}>
-            <MeSummary /> 
-          </View>
-          <ScrollView>
-            <Text> list </Text>  
-          </ScrollView>
-        </View>
-    );
-  }
   render() {
+    const { meStyle } = styles;
     return (
-      <Swiper showsButtons loop={false} >
-        {this.renderDetail()}
-      </Swiper>
+      <View style={meStyle}>
+        <View style={{ height: 200 }}>
+          <MeSummary /> 
+        </View>
+        <ScrollView>
+          <MeList />
+        </ScrollView>
+      </View>
     );
   }
 }

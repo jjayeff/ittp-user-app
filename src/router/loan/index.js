@@ -1,14 +1,14 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
 import { Header, Bottom } from '../../components/common';
-import Loan from '../home/container/Loan';
-import { NEWS } from '../../texts';
+import Loan from './containers/Loan';
+import { LOAN } from '../../texts';
 
-const News = () => {
-  const { homeStyle } = styles;
+const Loans = () => {
+  const { loanStyle } = styles;
   return (
-    <View style={homeStyle}>
-      <Header headerText={NEWS} />
+    <View style={loanStyle}>
+      <Header headerText={LOAN} />
       <Loan />
       <Bottom />      
     </View>
@@ -16,11 +16,11 @@ const News = () => {
 };
 
 const styles = StyleSheet.create({
-  homeStyle: {
+  loanStyle: {
     backgroundColor: '#FFFFFF',          
     flex: 1,
     flexDirection: 'column',
   },
 });
 
-export default News;
+export default Loans;
