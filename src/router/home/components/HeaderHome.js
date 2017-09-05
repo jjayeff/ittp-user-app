@@ -13,7 +13,7 @@ class HeaderHome extends Component {
       <View style={{ paddingBottom: 5 }}>
         <Image 
           style={homeImageStyle}
-          source={require('../../../../store/image/home-image.jpg')}
+          source={require('../../../../store/image/homes/home-image.png')}
         >
           <View style={{ paddingTop: 50, paddingLeft: 20, flexDirection: 'row' }} >
             <View style={{ paddingTop: 10 }}>

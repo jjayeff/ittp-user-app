@@ -44,9 +44,12 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
     flexDirection: 'row',
+    backgroundColor: '#153d8a'
   },
   textStyle: {
-    color: '#153d8a'
+    color: '#fff',
+    fontSize: 24,
+    fontFamily: 'Cloud-Light', 
   }
 });
 

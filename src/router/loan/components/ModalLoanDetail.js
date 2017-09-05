@@ -134,12 +134,14 @@ const styles = {
   },
   HeadertextStyle: {              
     color: '#153d8a',
-    fontSize: 14,
+    fontFamily: 'Cloud-Light',
+    fontSize: 15,
     paddingLeft: 10,
   },
   textStyle: {             
     color: 'steelblue',
-    fontSize: 11,
+    fontFamily: 'Cloud-Light',
+    fontSize: 12,
     paddingLeft: 10,
   },
 };

@@ -16,7 +16,7 @@ class LoanHome extends Component {
       <View style={{ paddingBottom: 5 }}>
         <Image 
           style={imageStyle}
-          source={require('../../../../store/image/home-account.jpg')}
+          source={require('../../../../store/image/homes/home-account.jpg')}
         >
           <View style={{ paddingTop: 7 }} >
             <Text style={textStyle}> สัญญาทั้งหมด {num} สัญญา</Text>

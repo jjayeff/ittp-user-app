@@ -28,7 +28,7 @@ class ModalTransactionDetail extends Component {
           <View style={rowStyle}>
             <Image
               style={{ width: 45, height: 45 }}
-              source={require('../../../../store/image/bbl.png')}
+              source={require('../../../../store/image/banks/bbl.png')}
             />
             <Text style={headerCentertextStyle}>{BBL_NAME}</Text>
           </View>
@@ -39,7 +39,7 @@ class ModalTransactionDetail extends Component {
           <View style={rowStyle}>
             <Image
               style={{ width: 45, height: 45 }}
-              source={require('../../../../store/image/bbl.png')}
+              source={require('../../../../store/image/banks/bbl.png')}
             />
             <Text style={headerCentertextStyle}>{BBL_NAME}</Text>
           </View>
@@ -50,7 +50,7 @@ class ModalTransactionDetail extends Component {
           <View style={rowStyle}>
             <Image
               style={{ width: 45, height: 45 }}
-              source={require('../../../../store/image/gsb.png')}
+              source={require('../../../../store/image/banks/gsb.png')}
             />
             <Text style={headerCentertextStyle}>{GSB_NAME}</Text>
           </View>
@@ -61,7 +61,7 @@ class ModalTransactionDetail extends Component {
           <View style={rowStyle}>
             <Image
               style={{ width: 45, height: 45 }}
-              source={require('../../../../store/image/gsb.png')}
+              source={require('../../../../store/image/banks/gsb.png')}
             />
             <Text style={headerCentertextStyle}>{GSB_NAME}</Text>
           </View>
@@ -72,7 +72,7 @@ class ModalTransactionDetail extends Component {
           <View style={rowStyle}>
             <Image
               style={{ width: 45, height: 45 }}
-              source={require('../../../../store/image/ittp-icon.png')}
+              source={require('../../../../store/image/banks/ittp-icon.png')}
             />
             <Text style={headerCentertextStyle}>{ITTP_NAME}</Text>
           </View>
@@ -83,7 +83,7 @@ class ModalTransactionDetail extends Component {
           <View style={rowStyle}>
             <Image
               style={{ width: 45, height: 45 }}
-              source={require('../../../../store/image/ittp-icon.png')}
+              source={require('../../../../store/image/banks/ittp-icon.png')}
             />
             <Text style={headerCentertextStyle}>{ITTP_NAME}</Text>
           </View>
@@ -149,18 +149,21 @@ const styles = {
   },
   HeadertextStyle: {              
     color: '#153d8a',
-    fontSize: 14,
+    fontFamily: 'Cloud-Light',
+    fontSize: 17,
     paddingLeft: 10,
   },
   headerCentertextStyle: {              
     color: '#153d8a',
-    fontSize: 14,
+    fontFamily: 'Cloud-Light',
+    fontSize: 18,
     paddingLeft: 10,
     alignSelf: 'center'
   },
   textStyle: {             
     color: 'steelblue',
-    fontSize: 11,
+    fontFamily: 'Cloud-Light',
+    fontSize: 14,
     paddingLeft: 10,
   },
 };

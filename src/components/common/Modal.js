@@ -55,6 +55,7 @@ const styles = {
   textStyle: {
     alignSelf: 'center',
     color: 'steelblue',
+    fontFamily: 'Cloud-Light',
     fontSize: 12,
     paddingTop: 10,
     paddingBottom: 10,

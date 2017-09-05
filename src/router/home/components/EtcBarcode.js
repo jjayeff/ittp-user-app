@@ -9,7 +9,7 @@ class EtcBarcode extends Component {
       <TouchableOpacity onPress={onPress} style={containerStyle}>       
         <Image 
           style={circleStyle}
-          source={require('../../../../store/image/home-barcode.jpg')}
+          source={require('../../../../store/image/homes/home-barcode.jpg')}
         />
       </TouchableOpacity>
     );

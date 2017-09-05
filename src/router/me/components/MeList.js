@@ -11,9 +11,8 @@ class MeList extends Component {
           <CardMe>
             <CardMeSection>
               <TextModal>
-                <View style={{ justifyContent: 'space-between', flexDirection: 'row' }}>
+                <View style={{ justifyContent: 'space-between', flexDirection: 'row', width: '100%' }}>
                   <Text> ข้อมูลส่วนตัว </Text>
-                  <Text> > </Text>
                 </View>
               </TextModal>       
             </CardMeSection>

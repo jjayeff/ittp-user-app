@@ -9,7 +9,7 @@ class EtcMe extends Component {
       <TouchableOpacity onPress={onPress} style={containerStyle}>       
         <Image 
         style={circleStyle}
-        source={require('../../../../store/image/home-me.jpg')}
+        source={require('../../../../store/image/homes/home-me.jpg')}
         />
       </TouchableOpacity>
     );

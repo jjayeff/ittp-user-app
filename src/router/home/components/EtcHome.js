@@ -21,7 +21,6 @@ class EtcHome extends Component {
 const styles = StyleSheet.create({
   containerStyle: {         
     paddingLeft: 5, 
-    paddingRight: 5, 
     paddingBottom: 5,     
     flexDirection: 'row', 
     justifyContent: 'space-between'

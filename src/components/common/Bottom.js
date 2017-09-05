@@ -42,7 +42,7 @@ class Bottom extends Component {
           <View style={iconStyle}>      
             <Image
               style={{ width: 20, height: 20 }}
-              source={require('../../../store/image/icon/loan-icon.png')}
+              source={require('../../../store/image/icons/loan-icon.png')}
             />
             <Text style={textStyle}>{LOAN}</Text>        
           </View>
@@ -90,6 +90,7 @@ const styles = StyleSheet.create({
     shadowOffset: { width: 0, height: 2 },
     shadowOpacity: 0.2,
     flexDirection: 'row',
+    backgroundColor: '#153d8a'
   },
   iconStyle: {        
     justifyContent: 'center',                
@@ -100,7 +101,7 @@ const styles = StyleSheet.create({
     fontSize: 14,    
     fontFamily: 'Cloud-Light',   
     alignItems: 'center',   
-    color: 'steelblue',
+    color: '#fff',
   },
 });
 

@@ -16,7 +16,7 @@ class TransactionCardSaction extends Component {
         return (
           <Image
             style={{ width: 45, height: 40 }}
-            source={require('../../../../store/image/bbl.png')}
+            source={require('../../../../store/image/banks/bbl.png')}
           />
         );
       }
@@ -24,7 +24,7 @@ class TransactionCardSaction extends Component {
         return (
           <Image
             style={{ width: 45, height: 40 }}
-            source={require('../../../../store/image/gsb.png')}
+            source={require('../../../../store/image/banks/gsb.png')}
           />
         );
       }
@@ -32,7 +32,7 @@ class TransactionCardSaction extends Component {
         return (
           <Image
             style={{ width: 45, height: 40 }}
-            source={require('../../../../store/image/ittp-icon.png')}
+            source={require('../../../../store/image/banks/ittp-icon.png')}
           />
         );
       }
@@ -87,11 +87,13 @@ const styles = {
     flexDirection: 'row',
   },
   textStyle: {
-    fontSize: 12,
+    fontSize: 14,
+    fontFamily: 'Cloud-Light',
     color: '#153d8a'
   },
   textTimeStyle: {
-    fontSize: 11,
+    fontSize: 13,
+    fontFamily: 'Cloud-Light',
     color: 'steelblue'
   }
 };

@@ -19,7 +19,7 @@ class Home extends Component {
     Actions.me();
   }
   render() {
-    const { containerStyle } = styles;
+    const { containerStyle, ImageStyle } = styles;
     const { firstname } = this.props.loans[0];
     let total = 0;
     this.props.loans.map(loan => total += loan.cf_principal);
@@ -34,6 +34,18 @@ class Home extends Component {
           <HeaderHome firstname={firstname} />
           <LoanHome onPress={this.onPressLoan} num={this.props.loans.length} total={total} />
           <EtcHome onPress={onPress} />
+          <View style={{ paddingBottom: 5 }}>
+            <Image 
+              style={ImageStyle}
+              source={require('../../../../store/image/new1.png')}
+            />
+          </View>
+          <View style={{ paddingBottom: 5 }}>
+            <Image 
+              style={ImageStyle}
+              source={require('../../../../store/image/new2.png')}
+            />
+          </View>
         </View>
       </ScrollView>
     );
@@ -50,6 +62,10 @@ const styles = StyleSheet.create({
     width: '32%',
     height: 120,
     backgroundColor: '#153d8a',  
+  },
+  ImageStyle: {
+    width: '100%', 
+    height: 160, 
   },
 });
 

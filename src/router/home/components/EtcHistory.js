@@ -9,7 +9,7 @@ class EtcHistory extends Component {
       <TouchableOpacity onPress={onPress} style={containerStyle}>       
         <Image 
           style={circleStyle}
-          source={require('../../../../store/image/home-history.jpg')}
+          source={require('../../../../store/image/homes/home-history.jpg')}
         />
       </TouchableOpacity>
     );

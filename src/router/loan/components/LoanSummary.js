@@ -31,7 +31,8 @@ const styles = StyleSheet.create({
     alignItems: 'flex-end',           
   },
   textStyle: {
-    fontSize: 14,
+    fontSize: 17,
+    fontFamily: 'Cloud-Light',
     color: '#153d8a'
   },
   textColorStyle: {
