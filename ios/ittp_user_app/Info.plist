@@ -17,14 +17,14 @@
 	</array>
 	<key>NSHumanReadableCopyright</key>
 	<array>
-		<string></string>
+		<string/>
 	</array>
 	<key>CFBundleGetInfoString</key>
 	<array>
-		<string></string>
+		<string/>
 	</array>
 	<key>LSApplicationCategoryType</key>
-	<string></string>
+	<string/>
 	<key>CFBundleDevelopmentRegion</key>
 	<string>en</string>
 	<key>CFBundleDisplayName</key>
@@ -62,7 +62,7 @@
 	<key>UIViewControllerBasedStatusBarAppearance</key>
 	<false/>
 	<key>NSLocationWhenInUseUsageDescription</key>
-	<string></string>
+	<string/>
 	<key>NSAppTransportSecurity</key>
 	<dict>
 		<key>NSExceptionDomains</key>
