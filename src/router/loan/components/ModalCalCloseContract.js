@@ -23,7 +23,8 @@ import {
   TOTAL_CLOSE_CONTRACT,
   TOTAL_AMOUNTS,
   INTERREST,
-  HOW_MUCH_CLOSE_CONTRACT
+  HOW_MUCH_CLOSE_CONTRACT,
+  DATE_OPEN_CONTRACT
 } from '../../../texts';
 
 class ModalCalCloseContract extends Component {
@@ -89,9 +90,13 @@ class ModalCalCloseContract extends Component {
         </TextModal>
         <TextModal>
           <View style={rowStyle}>
-            <View >
+            <View>
               <Text style={textStyle}>{TOTAL_CLOSE_CONTRACT}</Text>
               <Text style={HeadertextStyle} >{Money(calTotalContractFee(TotalContractFee), true)} {BATH}</Text>         
+            </View>
+            <View style={{ alignItems: 'flex-end' }}>
+              <Text style={textStyle}>{DATE_OPEN_CONTRACT}</Text>
+              <Text style={HeadertextStyle} >{DateFormat(open_date)}</Text>         
             </View>
           </View>
         </TextModal>

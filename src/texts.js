@@ -23,6 +23,7 @@ export const TOTAL_AMOUNTS = 'เงินต้น';
 export const INTERREST = 'ดอกเบี้ยรวม';
 export const HOW_MUCH_CLOSE_CONTRACT = 'ค่าปิดสัญญา';
 export const DATE_CLOSE_CONTRACT = 'วันที่ต้องการปิด';
+export const DATE_OPEN_CONTRACT = 'วันที่เปิดสัญญา';
 
 //Icon
 export const HOME = 'หน้าแรก';

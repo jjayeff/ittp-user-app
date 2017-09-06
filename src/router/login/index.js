@@ -1,19 +1,25 @@
-import React from 'react';
-import { View, Image, StyleSheet } from 'react-native';
+import React, { Component } from 'react';
+import { View, Image, StyleSheet, TouchableOpacity } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 import LoginForm from './components/LoginForm';
 
-const Login = () => {
-  return (
-    <View style={{ flex: 1 }}>
-      <Image
-        style={styles.containerStyle}
-        source={require('../../../store/image/background-login.jpg')}
-      >
-        <LoginForm />
-      </Image>
-    </View>
-  );
-};
+class Login extends Component {
+  onPressLogin() {
+    Actions.home();
+  }
+  render() {
+    return (
+      <View style={{ flex: 1 }}>
+        <TouchableOpacity onPress={this.onPressLogin}>
+        <Image
+          style={styles.containerStyle}
+          source={require('../../../store/image/background-login.jpg')}
+        />
+        </TouchableOpacity>
+      </View>
+    );
+  }
+}
 
 const styles = StyleSheet.create({
   containerStyle: {        

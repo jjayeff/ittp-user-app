@@ -16,6 +16,10 @@ export const DateFormat = (date) => {
   return moment(date).add(543, 'year').format('D MMMM YYYY');
 };
 
+export const TimeFormat = (date) => {
+  return moment(date).format('H:mm');
+};
+
 // Function Calculate Interest
 export const calInterest = (Interest) => {
   const date = new Date(Interest.transactionDate);

@@ -1,6 +1,7 @@
 import React, { Component } from 'react';
 import { View, StyleSheet, ScrollView, Image } from 'react-native';
 import { Actions } from 'react-native-router-flux';
+import { CID } from '../../../../config';
 import HeaderHome from './HeaderHome';
 import LoanHome from './LoanHome';
 import EtcHome from './EtcHome';
@@ -8,7 +9,7 @@ import { Spinner } from '../../../components/common';
 
 class Home extends Component {
   componentDidMount() {
-    this.props.fetchLoansCID('4101200009225');
+    this.props.fetchLoansCID(CID);
   }
   onPressLoan() {
     Actions.loans();
@@ -53,7 +54,6 @@ class Home extends Component {
     );
   }
   render() {
-    console.log(this.props.loans);
     if (this.props.loans.loading) {
       return (
         <ScrollView>
