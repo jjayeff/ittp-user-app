@@ -4,8 +4,12 @@ import { Actions } from 'react-native-router-flux';
 import HeaderHome from './HeaderHome';
 import LoanHome from './LoanHome';
 import EtcHome from './EtcHome';
+import { Spinner } from '../../../components/common';
 
 class Home extends Component {
+  componentDidMount() {
+    this.props.fetchLoansCID('4101200009225');
+  }
   onPressLoan() {
     Actions.loans();
   }
@@ -18,36 +22,49 @@ class Home extends Component {
   onPressMe() {
     Actions.me();
   }
-  render() {
-    const { containerStyle, ImageStyle } = styles;
-    const { firstname } = this.props.loans[0];
-    let total = 0;
-    this.props.loans.map(loan => total += loan.cf_principal);
+  renderComponents() {
+    const { containerStyle, ImageStyle } = styles;   
+    let total = 0; 
+    const { firstname } = this.props.loans.loanDb[0];
+    this.props.loans.loanDb.map(loan => total += loan.cf_principal);
     const onPress = {
       history: this.onPressHistory,
       barcode: this.onPressBarcode,
       me: this.onPressMe
-    };
+    };    
     return (
-      <ScrollView>
-        <View style={containerStyle}>
-          <HeaderHome firstname={firstname} />
-          <LoanHome onPress={this.onPressLoan} num={this.props.loans.length} total={total} />
-          <EtcHome onPress={onPress} />
-          <View style={{ paddingBottom: 5 }}>
-            <Image 
-              style={ImageStyle}
-              source={require('../../../../store/image/new1.png')}
-            />
-          </View>
-          <View style={{ paddingBottom: 5 }}>
-            <Image 
-              style={ImageStyle}
-              source={require('../../../../store/image/new2.png')}
-            />
-          </View>
+      <View style={containerStyle}>
+        <HeaderHome firstname={firstname} />
+        <LoanHome onPress={this.onPressLoan} num={this.props.loans.length} total={total} />
+        <EtcHome onPress={onPress} />
+        <View style={{ paddingBottom: 5 }}>
+          <Image 
+            style={ImageStyle}
+            source={require('../../../../store/image/new1.png')}
+          />
         </View>
-      </ScrollView>
+        <View style={{ paddingBottom: 5 }}>
+          <Image 
+            style={ImageStyle}
+            source={require('../../../../store/image/new2.png')}
+          />
+        </View>
+      </View>
+    );
+  }
+  render() {
+    console.log(this.props.loans);
+    if (this.props.loans.loading) {
+      return (
+        <ScrollView>
+          {this.renderComponents()}
+        </ScrollView>
+      );
+    }
+    return (
+      <View style={{ justifyContent: 'center', flex: 1, alignSelf: 'center' }}>
+        <Spinner />
+      </View>
     );
   }
 }

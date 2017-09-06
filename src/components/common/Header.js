@@ -1,36 +1,42 @@
-import React from 'react';
+import React, { Component } from 'react';
 import {
   Text,
   View,
   Image,
   StyleSheet,
 } from 'react-native';
+import { Actions } from 'react-native-router-flux';
 import { Logout } from '../../components/common';
 import { ITTP } from '../../texts';
 
-const Header = (props) => {
-  const { headerText } = props;
-  const { headerStyle, textStyle } = styles;
-  if (headerText === ITTP) {
-    return (
-      <View style={headerStyle}>
-        <View style={{ width: 20, height: 20 }} />             
-        <Image
-          style={{ width: 90, height: 30, }}
-          source={require('../../../store/image/ITTP.jpg')}      
-        />
-        <Logout />
-      </View>
-    );
+class Header extends Component {
+  onPressLogOut() {
+    Actions.login();
   }
-   return (
-    <View style={headerStyle}>
-      <View style={{ width: 20, height: 20 }} />     
-      <Text style={textStyle}> {props.headerText} </Text>   
-      <Logout />
-    </View>
-  ); 
-};
+  render() {
+    const { headerText } = this.props;
+    const { headerStyle, textStyle } = styles;
+    if (headerText === ITTP) {
+      return (
+        <View style={headerStyle}>
+          <View style={{ width: 20, height: 20 }} />             
+          <Image
+            style={{ width: 90, height: 30, }}
+            source={require('../../../store/image/ITTP.jpg')}      
+          />
+          <Logout onPress={this.onPressLogOut} />
+        </View>
+      );
+    }
+     return (
+      <View style={headerStyle}>
+        <View style={{ width: 20, height: 20 }} />     
+        <Text style={textStyle}> {this.props.headerText} </Text>   
+        <Logout onPress={this.onPressLogOut} />
+      </View>
+    ); 
+  }
+}
 
 const styles = StyleSheet.create({
   headerStyle: {

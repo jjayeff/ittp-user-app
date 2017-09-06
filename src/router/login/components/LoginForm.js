@@ -10,14 +10,6 @@ class LoginForm extends Component {
   render() {
     return (
       <View style={{ width: '90%' }}>
-        <View style={{ justifyContent: 'center', alignSelf: 'center' }}>
-          <TouchableOpacity onPress={this.onPressLogin}>
-            <Image
-              style={{ height: 100, width: 100 }}
-              source={require('../../../../store/image/banks/ittp-icon.png')}
-            />
-          </TouchableOpacity>
-        </View>
         <View style={{ justifyContent: 'center', paddingLeft: 20, paddingRight: 20 }}>
           <Isao
             label={'เบอร์โทรศัพท์'}
@@ -29,6 +21,14 @@ class LoginForm extends Component {
             activeColor={'#000'}
             passiveColor={'#fff'}
           />
+        </View>
+        <View style={{ justifyContent: 'center', alignSelf: 'center', paddingTop: 80 }}>
+          <TouchableOpacity onPress={this.onPressLogin}>
+            <Image
+              style={{ height: 100, width: 100 }}
+              source={require('../../../../store/image/banks/ittp-icon.png')}
+            />
+          </TouchableOpacity>
         </View>
       </View>
     );
