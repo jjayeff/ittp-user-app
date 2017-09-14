@@ -1,17 +1,17 @@
 import React, { Component } from 'react';
 import { StyleSheet, Image, TouchableOpacity, Text } from 'react-native';
 
-class EtcBarcode extends Component {
+class EtcContact extends Component {
   render() {
     const { circleStyle, containerStyle, textStyle } = styles;
     const { onPress } = this.props;
     return (
       <TouchableOpacity onPress={onPress} style={containerStyle}>       
         <Image 
-          style={circleStyle}
-          source={require('../../../../store/image/homes/home-barcode.png')}
+        style={circleStyle}
+        source={require('../../../../store/image/homes/home-contact.png')}
         />
-        <Text style={textStyle}>จ่ายเงิน</Text>
+        <Text style={textStyle}>ติดต่อเรา</Text>
       </TouchableOpacity>
     );
   }
@@ -35,4 +35,4 @@ const styles = StyleSheet.create({
   },
 });
 
-export default EtcBarcode;
+export default EtcContact;

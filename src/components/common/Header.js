@@ -24,7 +24,7 @@ class Header extends Component {
             style={{ width: 90, height: 30, }}
             source={require('../../../store/image/ITTP.jpg')}      
           />
-          <Logout onPress={this.onPressLogOut} />
+          <View style={{ width: 20, height: 20 }} />                       
         </View>
       );
     }
@@ -32,7 +32,7 @@ class Header extends Component {
       <View style={headerStyle}>
         <View style={{ width: 20, height: 20 }} />     
         <Text style={textStyle}> {this.props.headerText} </Text>   
-        <Logout onPress={this.onPressLogOut} />
+        <View style={{ width: 20, height: 20 }} />                     
       </View>
     ); 
   }

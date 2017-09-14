@@ -1,7 +1,6 @@
 import React from 'react';
 import { View, StyleSheet } from 'react-native';
-import { Header, Bottom } from '../../components/common';
-import { ITTP } from '../../texts';
+import { Bottom } from '../../components/common';
 import HomeComponent from './containers/Home';
 
 const Home = () => {

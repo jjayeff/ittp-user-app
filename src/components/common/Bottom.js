@@ -20,13 +20,13 @@ class Bottom extends Component {
     Actions.history();
   }
   onPressBarcode() {
-    // Actions.barcode();
+    Actions.barcode();
   }
   onPressMe() {
     Actions.me();
   }
   render() {
-    const { iconStyle, bottomStyle, textStyle, selectTextStyle } = styles;
+    const { iconStyle, bottomStyle, textStyle } = styles;
     return (
       <View style={bottomStyle}>  
         <TouchableOpacity onPress={this.onPressHome}>

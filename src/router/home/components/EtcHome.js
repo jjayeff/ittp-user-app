@@ -1,29 +1,42 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, Image } from 'react-native';
+import { View, StyleSheet, Text } from 'react-native';
 import EtcHistory from './EtcHistory';
 import EtcBarcode from './EtcBarcode';
 import EtcMe from './EtcMe';
+import EtcContact from './EtcContact';
 
 class EtcHome extends Component {
   render() {
-    const { containerStyle } = styles;
+    const { containerStyle, textStyle } = styles;
     const { history, barcode, me } = this.props.onPress;
     return (
-      <View style={containerStyle}>      
+      <View>
+        <Text style={textStyle}>เมนูลัด</Text>
+        <View style={containerStyle}>
           <EtcHistory onPress={history} /> 
           <EtcBarcode onPress={barcode} />
-          <EtcMe onPress={me} />                                                
+          <EtcMe onPress={me} />    
+          <EtcContact />     
+        </View>                                        
       </View>
     );
   }
 }
 
 const styles = StyleSheet.create({
-  containerStyle: {         
-    paddingLeft: 5, 
-    paddingBottom: 5,     
+  containerStyle: {    
+    paddingBottom: 10,     
+    paddingLeft: 5,
+    paddingRight: 5,
     flexDirection: 'row', 
-    justifyContent: 'space-between'
+    justifyContent: 'space-between',
+  },
+  textStyle: {
+    paddingLeft: 13,    
+    fontSize: 25,
+    fontFamily: 'Cloud-Bold',
+    alignItems: 'center',
+    color: '#3363ad',
   },
 });
 

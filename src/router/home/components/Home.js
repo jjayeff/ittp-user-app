@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import { View, StyleSheet, ScrollView, Image } from 'react-native';
+import { View, StyleSheet, ScrollView, Image, Text } from 'react-native';
 import { Actions } from 'react-native-router-flux';
 import { CID } from '../../../../config';
 import HeaderHome from './HeaderHome';
@@ -18,13 +18,13 @@ class Home extends Component {
     Actions.history();
   }
   onPressBarcode() {
-    // Actions.barcode();
+    Actions.barcode();
   }
   onPressMe() {
     Actions.me();
   }
   renderComponents() {
-    const { containerStyle, ImageStyle } = styles;   
+    const { containerStyle, ImageStyle, textStyle } = styles;   
     let total = 0; 
     const { firstname } = this.props.loans.loanDb[0];
     this.props.loans.loanDb.map(loan => total += loan.cf_principal);
@@ -36,19 +36,22 @@ class Home extends Component {
     return (
       <View style={containerStyle}>
         <HeaderHome firstname={firstname} />
-        <LoanHome onPress={this.onPressLoan} num={this.props.loans.length} total={total} />
+        <LoanHome onPress={this.onPressLoan} num={this.props.loans.loanDb.length} total={total} />
         <EtcHome onPress={onPress} />
-        <View style={{ paddingBottom: 5 }}>
-          <Image 
-            style={ImageStyle}
-            source={require('../../../../store/image/new1.png')}
-          />
-        </View>
-        <View style={{ paddingBottom: 5 }}>
-          <Image 
-            style={ImageStyle}
-            source={require('../../../../store/image/new2.png')}
-          />
+        <View>
+          <Text style={textStyle}>ข่าวสาร</Text>
+          <View style={{ paddingBottom: 5, alignItems: 'center' }}>
+            <Image 
+              style={ImageStyle}
+              source={require('../../../../store/image/new1.png')}
+            />
+          </View>
+          <View style={{ paddingBottom: 5, alignItems: 'center' }}>
+            <Image 
+              style={ImageStyle}
+              source={require('../../../../store/image/new2.png')}
+            />
+          </View>
         </View>
       </View>
     );
@@ -81,8 +84,15 @@ const styles = StyleSheet.create({
     backgroundColor: '#153d8a',  
   },
   ImageStyle: {
-    width: '100%', 
+    width: '97%', 
     height: 160, 
+  },
+  textStyle: {
+    paddingLeft: 13,    
+    fontSize: 25,
+    fontFamily: 'Cloud-Bold',
+    alignItems: 'center',
+    color: '#3363ad',
   },
 });
 

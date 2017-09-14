@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import { View, Image, StyleSheet, TouchableOpacity } from 'react-native';
 import { Actions } from 'react-native-router-flux';
+import { Header } from '../../components/common';
+import { ITTP } from '../../texts';
 import LoginForm from './components/LoginForm';
 
 class Login extends Component {
@@ -10,6 +12,7 @@ class Login extends Component {
   render() {
     return (
       <View style={{ flex: 1 }}>
+        <Header headerText={ITTP} />
         <TouchableOpacity onPress={this.onPressLogin}>
         <Image
           style={styles.containerStyle}

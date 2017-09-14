@@ -21,6 +21,7 @@ class LoanDetail extends Component {
       inCircleStyle, 
       textHeadStyle, 
       textStyle,
+      textDetail,
       pageStyle
     } = styles;
     const { due_date, min_due } = this.props.loan;    
@@ -48,6 +49,9 @@ class LoanDetail extends Component {
                     </Text>
                     <Text style={textHeadStyle}>
                       {DateFormat(due_date)}
+                    </Text>
+                    <Text style={textDetail}>
+                      ดูรายละเอียด
                     </Text>
                   </View>
                 </TouchableWithoutFeedback>            
@@ -102,6 +106,12 @@ const styles = StyleSheet.create({
     fontFamily: 'Cloud-Light',    
     alignItems: 'center',    
     color: '#153d8a',        
+  },
+  textDetail: {
+    fontSize: 16,       
+    fontFamily: 'Cloud-Light',    
+    alignItems: 'center',    
+    color: 'red',        
   },
   outerCircle: {
     borderRadius: 140,
