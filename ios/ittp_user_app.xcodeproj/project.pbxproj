@@ -63,6 +63,24 @@
 		B94E2E10034C4BA5AAC07117 /* Octicons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E800F89815064FBD86FF6965 /* Octicons.ttf */; };
 		82A5225760F44F378EC7CC6B /* SimpleLineIcons.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F53CBB18DE83444A9E41CF08 /* SimpleLineIcons.ttf */; };
 		1505FF46711B474E9FA9CB57 /* Zocial.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9C0D3E974FC84081BF1C9293 /* Zocial.ttf */; };
+		954C71542B0546648606DD51 /* Superspace Bold Italic ver 1.00.otf in Resources */ = {isa = PBXBuildFile; fileRef = 3D0C4EB8E830418FAD2CFE01 /* Superspace Bold Italic ver 1.00.otf */; };
+		ACE9558446254526AA5E8AB4 /* Superspace Bold Italic ver 1.00.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3255BE4C37FC44B59F6ABDF5 /* Superspace Bold Italic ver 1.00.ttf */; };
+		72A012D78A144D5CA0BEDADE /* Superspace Bold Slant ver 1.00.otf in Resources */ = {isa = PBXBuildFile; fileRef = 99D858BFA364421C8FDF48DD /* Superspace Bold Slant ver 1.00.otf */; };
+		5AE0E23E81824F6DA1D7062E /* Superspace Bold Slant ver 1.00.ttf in Resources */ = {isa = PBXBuildFile; fileRef = F5B2560A7BED4AEE98F3E141 /* Superspace Bold Slant ver 1.00.ttf */; };
+		D50AEE98551B438F8C1FB407 /* Superspace Bold ver 1.00.otf in Resources */ = {isa = PBXBuildFile; fileRef = 1508DBBD0F3F4AB1A8329C64 /* Superspace Bold ver 1.00.otf */; };
+		6C0362DD5A684CF4A8C01B81 /* Superspace Bold ver 1.00.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 9FAC4D1CD18D43DD92E6C19D /* Superspace Bold ver 1.00.ttf */; };
+		DA176AC6C1454CB8B7C07556 /* Superspace Light Italic ver 1.00.otf in Resources */ = {isa = PBXBuildFile; fileRef = 5BCC5C35C0234076946B3EC2 /* Superspace Light Italic ver 1.00.otf */; };
+		86AE1AA9FE8E47F09B233CCE /* Superspace Light Italic ver 1.00.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E63594E788D74258A634BEB5 /* Superspace Light Italic ver 1.00.ttf */; };
+		B52C60102F21441C9C396006 /* Superspace Light Slant ver 1.00.otf in Resources */ = {isa = PBXBuildFile; fileRef = F8BF46F2CB3C4EE6A3DA9F10 /* Superspace Light Slant ver 1.00.otf */; };
+		4DCEB6D454474E3B935AC317 /* Superspace Light Slant ver 1.00.ttf in Resources */ = {isa = PBXBuildFile; fileRef = ECA4C4CA4D0D4A9EA6057A3B /* Superspace Light Slant ver 1.00.ttf */; };
+		1A71E262A0A14D47A81C9909 /* Superspace Light ver 1.00.otf in Resources */ = {isa = PBXBuildFile; fileRef = A44DACC313824B3BAFCE1A2B /* Superspace Light ver 1.00.otf */; };
+		18F5CBD12F9D45458FE242A6 /* Superspace Light ver 1.00.ttf in Resources */ = {isa = PBXBuildFile; fileRef = CB33FAC9D951457A8180310D /* Superspace Light ver 1.00.ttf */; };
+		07114BDA4A274A3481F9398A /* Superspace Regular Italic ver 1.00.otf in Resources */ = {isa = PBXBuildFile; fileRef = 31C2ED695EFC45B3BA32B231 /* Superspace Regular Italic ver 1.00.otf */; };
+		5A59A1BBAE7A43BE895FAEAC /* Superspace Regular Italic ver 1.00.ttf in Resources */ = {isa = PBXBuildFile; fileRef = D050CBC9A00647CA863030F3 /* Superspace Regular Italic ver 1.00.ttf */; };
+		870EC754840B49BBA6FAF970 /* Superspace Regular ver 1.00 Slant.otf in Resources */ = {isa = PBXBuildFile; fileRef = 2983C9DB64974015A65CF674 /* Superspace Regular ver 1.00 Slant.otf */; };
+		51327A3395DF40F69102EEB2 /* Superspace Regular ver 1.00 Slant.ttf in Resources */ = {isa = PBXBuildFile; fileRef = E5C9E0C8603547068CC0FCE8 /* Superspace Regular ver 1.00 Slant.ttf */; };
+		26E79CBEFAED41BEAA4F98B3 /* Superspace Regular ver 1.00.otf in Resources */ = {isa = PBXBuildFile; fileRef = 75857E11E9A948A7ABDD98E2 /* Superspace Regular ver 1.00.otf */; };
+		E44004A754344CAA809C0196 /* Superspace Regular ver 1.00.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 044626066E6F4633A3D78DC4 /* Superspace Regular ver 1.00.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -346,6 +364,24 @@
 		E800F89815064FBD86FF6965 /* Octicons.ttf */ = {isa = PBXFileReference; name = "Octicons.ttf"; path = "../assets/fonts/Octicons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		F53CBB18DE83444A9E41CF08 /* SimpleLineIcons.ttf */ = {isa = PBXFileReference; name = "SimpleLineIcons.ttf"; path = "../assets/fonts/SimpleLineIcons.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 		9C0D3E974FC84081BF1C9293 /* Zocial.ttf */ = {isa = PBXFileReference; name = "Zocial.ttf"; path = "../assets/fonts/Zocial.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3D0C4EB8E830418FAD2CFE01 /* Superspace Bold Italic ver 1.00.otf */ = {isa = PBXFileReference; name = "Superspace Bold Italic ver 1.00.otf"; path = "../assets/fonts/Superspace Bold Italic ver 1.00.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		3255BE4C37FC44B59F6ABDF5 /* Superspace Bold Italic ver 1.00.ttf */ = {isa = PBXFileReference; name = "Superspace Bold Italic ver 1.00.ttf"; path = "../assets/fonts/Superspace Bold Italic ver 1.00.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		99D858BFA364421C8FDF48DD /* Superspace Bold Slant ver 1.00.otf */ = {isa = PBXFileReference; name = "Superspace Bold Slant ver 1.00.otf"; path = "../assets/fonts/Superspace Bold Slant ver 1.00.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F5B2560A7BED4AEE98F3E141 /* Superspace Bold Slant ver 1.00.ttf */ = {isa = PBXFileReference; name = "Superspace Bold Slant ver 1.00.ttf"; path = "../assets/fonts/Superspace Bold Slant ver 1.00.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		1508DBBD0F3F4AB1A8329C64 /* Superspace Bold ver 1.00.otf */ = {isa = PBXFileReference; name = "Superspace Bold ver 1.00.otf"; path = "../assets/fonts/Superspace Bold ver 1.00.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		9FAC4D1CD18D43DD92E6C19D /* Superspace Bold ver 1.00.ttf */ = {isa = PBXFileReference; name = "Superspace Bold ver 1.00.ttf"; path = "../assets/fonts/Superspace Bold ver 1.00.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		5BCC5C35C0234076946B3EC2 /* Superspace Light Italic ver 1.00.otf */ = {isa = PBXFileReference; name = "Superspace Light Italic ver 1.00.otf"; path = "../assets/fonts/Superspace Light Italic ver 1.00.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E63594E788D74258A634BEB5 /* Superspace Light Italic ver 1.00.ttf */ = {isa = PBXFileReference; name = "Superspace Light Italic ver 1.00.ttf"; path = "../assets/fonts/Superspace Light Italic ver 1.00.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		F8BF46F2CB3C4EE6A3DA9F10 /* Superspace Light Slant ver 1.00.otf */ = {isa = PBXFileReference; name = "Superspace Light Slant ver 1.00.otf"; path = "../assets/fonts/Superspace Light Slant ver 1.00.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		ECA4C4CA4D0D4A9EA6057A3B /* Superspace Light Slant ver 1.00.ttf */ = {isa = PBXFileReference; name = "Superspace Light Slant ver 1.00.ttf"; path = "../assets/fonts/Superspace Light Slant ver 1.00.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		A44DACC313824B3BAFCE1A2B /* Superspace Light ver 1.00.otf */ = {isa = PBXFileReference; name = "Superspace Light ver 1.00.otf"; path = "../assets/fonts/Superspace Light ver 1.00.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		CB33FAC9D951457A8180310D /* Superspace Light ver 1.00.ttf */ = {isa = PBXFileReference; name = "Superspace Light ver 1.00.ttf"; path = "../assets/fonts/Superspace Light ver 1.00.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		31C2ED695EFC45B3BA32B231 /* Superspace Regular Italic ver 1.00.otf */ = {isa = PBXFileReference; name = "Superspace Regular Italic ver 1.00.otf"; path = "../assets/fonts/Superspace Regular Italic ver 1.00.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		D050CBC9A00647CA863030F3 /* Superspace Regular Italic ver 1.00.ttf */ = {isa = PBXFileReference; name = "Superspace Regular Italic ver 1.00.ttf"; path = "../assets/fonts/Superspace Regular Italic ver 1.00.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		2983C9DB64974015A65CF674 /* Superspace Regular ver 1.00 Slant.otf */ = {isa = PBXFileReference; name = "Superspace Regular ver 1.00 Slant.otf"; path = "../assets/fonts/Superspace Regular ver 1.00 Slant.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		E5C9E0C8603547068CC0FCE8 /* Superspace Regular ver 1.00 Slant.ttf */ = {isa = PBXFileReference; name = "Superspace Regular ver 1.00 Slant.ttf"; path = "../assets/fonts/Superspace Regular ver 1.00 Slant.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		75857E11E9A948A7ABDD98E2 /* Superspace Regular ver 1.00.otf */ = {isa = PBXFileReference; name = "Superspace Regular ver 1.00.otf"; path = "../assets/fonts/Superspace Regular ver 1.00.otf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
+		044626066E6F4633A3D78DC4 /* Superspace Regular ver 1.00.ttf */ = {isa = PBXFileReference; name = "Superspace Regular ver 1.00.ttf"; path = "../assets/fonts/Superspace Regular ver 1.00.ttf"; sourceTree = "<group>"; fileEncoding = undefined; lastKnownFileType = unknown; explicitFileType = undefined; includeInIndex = 0; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -619,6 +655,24 @@
 				E800F89815064FBD86FF6965 /* Octicons.ttf */,
 				F53CBB18DE83444A9E41CF08 /* SimpleLineIcons.ttf */,
 				9C0D3E974FC84081BF1C9293 /* Zocial.ttf */,
+				3D0C4EB8E830418FAD2CFE01 /* Superspace Bold Italic ver 1.00.otf */,
+				3255BE4C37FC44B59F6ABDF5 /* Superspace Bold Italic ver 1.00.ttf */,
+				99D858BFA364421C8FDF48DD /* Superspace Bold Slant ver 1.00.otf */,
+				F5B2560A7BED4AEE98F3E141 /* Superspace Bold Slant ver 1.00.ttf */,
+				1508DBBD0F3F4AB1A8329C64 /* Superspace Bold ver 1.00.otf */,
+				9FAC4D1CD18D43DD92E6C19D /* Superspace Bold ver 1.00.ttf */,
+				5BCC5C35C0234076946B3EC2 /* Superspace Light Italic ver 1.00.otf */,
+				E63594E788D74258A634BEB5 /* Superspace Light Italic ver 1.00.ttf */,
+				F8BF46F2CB3C4EE6A3DA9F10 /* Superspace Light Slant ver 1.00.otf */,
+				ECA4C4CA4D0D4A9EA6057A3B /* Superspace Light Slant ver 1.00.ttf */,
+				A44DACC313824B3BAFCE1A2B /* Superspace Light ver 1.00.otf */,
+				CB33FAC9D951457A8180310D /* Superspace Light ver 1.00.ttf */,
+				31C2ED695EFC45B3BA32B231 /* Superspace Regular Italic ver 1.00.otf */,
+				D050CBC9A00647CA863030F3 /* Superspace Regular Italic ver 1.00.ttf */,
+				2983C9DB64974015A65CF674 /* Superspace Regular ver 1.00 Slant.otf */,
+				E5C9E0C8603547068CC0FCE8 /* Superspace Regular ver 1.00 Slant.ttf */,
+				75857E11E9A948A7ABDD98E2 /* Superspace Regular ver 1.00.otf */,
+				044626066E6F4633A3D78DC4 /* Superspace Regular ver 1.00.ttf */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -1047,6 +1101,24 @@
 				B94E2E10034C4BA5AAC07117 /* Octicons.ttf in Resources */,
 				82A5225760F44F378EC7CC6B /* SimpleLineIcons.ttf in Resources */,
 				1505FF46711B474E9FA9CB57 /* Zocial.ttf in Resources */,
+				954C71542B0546648606DD51 /* Superspace Bold Italic ver 1.00.otf in Resources */,
+				ACE9558446254526AA5E8AB4 /* Superspace Bold Italic ver 1.00.ttf in Resources */,
+				72A012D78A144D5CA0BEDADE /* Superspace Bold Slant ver 1.00.otf in Resources */,
+				5AE0E23E81824F6DA1D7062E /* Superspace Bold Slant ver 1.00.ttf in Resources */,
+				D50AEE98551B438F8C1FB407 /* Superspace Bold ver 1.00.otf in Resources */,
+				6C0362DD5A684CF4A8C01B81 /* Superspace Bold ver 1.00.ttf in Resources */,
+				DA176AC6C1454CB8B7C07556 /* Superspace Light Italic ver 1.00.otf in Resources */,
+				86AE1AA9FE8E47F09B233CCE /* Superspace Light Italic ver 1.00.ttf in Resources */,
+				B52C60102F21441C9C396006 /* Superspace Light Slant ver 1.00.otf in Resources */,
+				4DCEB6D454474E3B935AC317 /* Superspace Light Slant ver 1.00.ttf in Resources */,
+				1A71E262A0A14D47A81C9909 /* Superspace Light ver 1.00.otf in Resources */,
+				18F5CBD12F9D45458FE242A6 /* Superspace Light ver 1.00.ttf in Resources */,
+				07114BDA4A274A3481F9398A /* Superspace Regular Italic ver 1.00.otf in Resources */,
+				5A59A1BBAE7A43BE895FAEAC /* Superspace Regular Italic ver 1.00.ttf in Resources */,
+				870EC754840B49BBA6FAF970 /* Superspace Regular ver 1.00 Slant.otf in Resources */,
+				51327A3395DF40F69102EEB2 /* Superspace Regular ver 1.00 Slant.ttf in Resources */,
+				26E79CBEFAED41BEAA4F98B3 /* Superspace Regular ver 1.00.otf in Resources */,
+				E44004A754344CAA809C0196 /* Superspace Regular ver 1.00.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
